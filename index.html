@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Dom Examples</title>
+</head>
+<body>
+    <nav id="main_nav">
+        <a class="centre" href="#">Home</a>
+        <a class="centre" href="#">About</a>
+    </nav>
+    <section>
+        <p id="main_paragraph" class="centre">A paragraph</p>
+    </section>
+</body>
+<script>
+    let nav_element = document.getElementById("main_nav");
+    console.log(nav_element);
+
+    let centred_elements = document.getElementsByClassName("centre");
+    console.log(centred_elements)
+
+    for (let i = 0; i < centred_elements.length; i++){
+    console.log(centred_elements[i]);
+    }
+
+    let centred_elements_2 = document.querySelectorAll('.centre');
+    console.log(centred_elements_2);
+</script>
+</html>
+

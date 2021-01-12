@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Dom Examples</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+    <body>
+        <section>
+            <p class="centre">heres a paragraph</p>
+            <p class="centre">heres another</p>
+        </section>
+        
+    </body>
+    <script>
+        let paragraphs = document.getElementsByTagName("p");
+        for (let i = 0; i < paragraphs.length; i ++) {
+            paragraphs[i].className = "right";
+        }
+    </script>
+</html>

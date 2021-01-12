@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Dom Examples</title>
+</head>
+    <body>
+        <nav id="main_nav">
+            <a class="centre" href="#">Home</a>
+            <a class="centre" href="#">About</a>
+        </nav>
+        <section>
+            <p id="main_paragraph" class="centre">A paragraph</p>
+            <img id="my_img" src="https://picsum.photos/id/237/200/300"/>
+        </section>
+    </body>
+    <script>
+        let img= document.getElementById("my_img");
+        img.src = "https://picsum.photos/200/300?grayscale";
+    </script>
+</html>
+
