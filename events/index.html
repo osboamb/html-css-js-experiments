@@ -15,5 +15,16 @@
     <footer>
         <small>Footer text</small>
     </footer>
+    <script>
+
+        let logClick = function (){
+            console.log('click');
+            console.log(this);
+        };
+
+        let header = document.getElementById('main_header');
+        console.log(header);
+        header.addEventListener('click',logClick);
+    </script>
 </body>
 </html>
