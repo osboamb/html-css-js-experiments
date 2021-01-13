@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="style3.css"/> 
+</head>
+<body>
+    <header class="red" id="main_header">
+        <h1>Sample Page</h1>
+    </header>
+    <section>
+        <p>Here's some text</p>
+    </section>
+    <footer>
+        <small>Footer text</small>
+    </footer>
+    <script>
+
+        let logClick = function () {
+            console.log('click');
+            console.log(this);
+        };
+
+        let changeClass = function () {
+            if(this.className === 'red') {
+                this.className = 'blue';
+            } else if(this.className === 'blue') {
+                this.className = 'red';
+            }
+        }
+
+        let header = document.getElementById('main_header');
+        console.log(header);
+        header.addEventListener('click', changeClass);
+    </script>
+</body>
+</html>
