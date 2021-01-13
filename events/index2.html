@@ -23,17 +23,12 @@
             console.log(this);
         };
 
-        let changeClass = function () {
-            if(this.className === 'red') {
-                this.className = 'blue';
-            } else if(this.className === 'blue') {
-                this.className = 'red';
-            }
-        }
-
         let header = document.getElementById('main_header');
         console.log(header);
-        header.addEventListener('click', changeClass);
+        header.addEventListener('click', logClick, true);
+
+        let h1 = document.querySelector("header#main_header h1");
+        h1.addEventListener("click", logClick);
     </script>
 </body>
 </html>
