@@ -1,0 +1,26 @@
+h1 {
+    font-size: 2em;
+}
+
+header {
+    display: flex;
+}
+
+header h1 {
+    padding-left: 20px;
+    padding-top: 10px;
+    width: 60vw;
+}
+
+nav {
+    padding-right: 20px;
+    padding-top: 10px;
+    width: 40vw;
+    text-align: right;
+}
+
+nav > ul > li {
+    padding-left: 10px;
+    font-size: 1.5em;
+    display: inline-block;
+}
