@@ -18,14 +18,22 @@
     </footer>
     <script>
 
-        let logClick = function (){
+        let logClick = function () {
             console.log('click');
             console.log(this);
         };
 
+        let changeClass = function () {
+            if(this.className === 'red') {
+                this.className = 'blue';
+            } else if(this.className === 'blue') {
+                this.className = 'red';
+            }
+        }
+
         let header = document.getElementById('main_header');
         console.log(header);
-        header.addEventListener('click',logClick);
+        header.addEventListener('click', changeClass);
     </script>
 </body>
 </html>
