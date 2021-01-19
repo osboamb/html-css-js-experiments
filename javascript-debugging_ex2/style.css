@@ -2,6 +2,14 @@ h1 {
     font-size: 2em;
 }
 
+.purple {
+    color: rgb(99, 45, 143);
+}
+
+.black { 
+    color:black;
+}
+
 header {
     display: flex;
 }
